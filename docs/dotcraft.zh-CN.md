@@ -23,20 +23,6 @@ https://github.com/DotHarness/dotcraft/releases
 
 前往 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 获取 API Key。
 
-如果使用本地配置文件，推荐把 API Key 放到环境变量中：
-
-```sh
-DEEPSEEK_API_KEY="sk-your-deepseek-api-key"
-```
-
-Windows PowerShell：
-
-```powershell
-setx DEEPSEEK_API_KEY "sk-your-deepseek-api-key"
-```
-
-设置新的环境变量后，请重启 DotCraft Desktop。
-
 #### 3. 在 Desktop 中配置 DeepSeek
 
 在 DotCraft 中打开一个真实项目目录作为工作区，然后进入 **Settings -> Model Providers**，创建一个 provider：
@@ -47,7 +33,7 @@ setx DEEPSEEK_API_KEY "sk-your-deepseek-api-key"
 | Display name | `DeepSeek` |
 | Protocol | `openai` |
 | Endpoint | `https://api.deepseek.com/v1` |
-| API Key | `${DEEPSEEK_API_KEY}` 或你的 DeepSeek API Key |
+| API Key | 你的 DeepSeek API Key |
 | Model | `deepseek-v4-pro` |
 | Reasoning | Enabled |
 | Reasoning effort | Extra High |

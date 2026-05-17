@@ -23,20 +23,6 @@ Install the package for your operating system and launch DotCraft Desktop.
 
 Get your API Key from the [DeepSeek Platform](https://platform.deepseek.com/api_keys).
 
-For local config files, it is recommended to store the key in an environment variable:
-
-```sh
-DEEPSEEK_API_KEY="sk-your-deepseek-api-key"
-```
-
-On Windows PowerShell:
-
-```powershell
-setx DEEPSEEK_API_KEY "sk-your-deepseek-api-key"
-```
-
-Restart DotCraft Desktop after setting a new environment variable.
-
 #### 3. Configure DeepSeek in Desktop
 
 Open a real project folder as your DotCraft workspace, then open **Settings -> Model Providers** and create a provider:
@@ -47,7 +33,7 @@ Open a real project folder as your DotCraft workspace, then open **Settings -> M
 | Display name | `DeepSeek` |
 | Protocol | `openai` |
 | Endpoint | `https://api.deepseek.com/v1` |
-| API Key | `${DEEPSEEK_API_KEY}` or your DeepSeek API key |
+| API Key | Your DeepSeek API key |
 | Model | `deepseek-v4-pro` |
 | Reasoning | Enabled |
 | Reasoning effort | Extra High |
